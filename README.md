@@ -1,6 +1,6 @@
 # tbp-severity-scoring
 
-##Part 2: CNN
+## Part 2: CNN
 This part contains the code and data used for the analysis of chest X-ray images (CXRs) for tuberculosis (TB) patients using the TB Portals Program (TBP) database.
 
 ## Repository Structure
