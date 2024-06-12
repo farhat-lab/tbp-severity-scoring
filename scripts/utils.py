@@ -70,3 +70,11 @@ def convert_dicom_to_png(csv_path, dicom_col, patient_id_col, output_folder, map
             # Store the path that generates ValueError
             value_error_paths.append(dicom_path)
             continue
+
+
+
+def inverse_min_max_scaling(norm_value, log_min, log_max):
+    return norm_value * (log_max - log_min) + log_min
+
+def inverse_log_transformation(log_value):
+    return np.exp(log_value) - 1
