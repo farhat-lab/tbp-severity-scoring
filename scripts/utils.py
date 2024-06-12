@@ -1,16 +1,3 @@
-from datetime import date, datetime
-from matplotlib import pyplot as plt
-from PIL import Image
-
-import collections
-import csv
-import os
-import pickle
-import pydicom
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-
 def convert_dicom_to_png(csv_path, dicom_col, patient_id_col, output_folder, mapping_csv_path):
     # Create the output folder to store the PNG images
     os.makedirs(output_folder, exist_ok=True)
@@ -71,7 +58,10 @@ def convert_dicom_to_png(csv_path, dicom_col, patient_id_col, output_folder, map
             value_error_paths.append(dicom_path)
             continue
 
-
+def get_image_path(number):
+    filename = f"{number}.png"  # images stored based on patient id
+    path = DATA_PATH + 'rifr_rifs/test/'
+    return os.path.join(path, filename)
 
 def inverse_min_max_scaling(norm_value, log_min, log_max):
     return norm_value * (log_max - log_min) + log_min
