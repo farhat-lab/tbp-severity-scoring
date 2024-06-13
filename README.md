@@ -40,5 +40,6 @@ pip install -r requirements.txt
 To test the PLI regression model on your image samples:
 ```bash
 python scripts/test.py
+```
 
 
