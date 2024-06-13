@@ -19,7 +19,7 @@ This part contains the code and data used for the analysis of chest X-ray images
 
 ## Installation
 1. Clone the repository:
-- git clone https://github.com/yourusername/tbp-severity-scoring.git
+- git clone https://github.com/farhat-lab/tbp-severity-scoring.git
 - cd tbp-severity-scoring
 
 2. Create and activate a virtual environment (optional but recommended):
