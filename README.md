@@ -19,15 +19,15 @@ This part contains the code and data used for the analysis of chest X-ray images
 
 ## Installation
 1. Clone the repository:
-git clone https://github.com/yourusername/tbp-severity-scoring.git
-cd tbp-severity-scoring
+-git clone https://github.com/yourusername/tbp-severity-scoring.git
+-cd tbp-severity-scoring
 
 2. Create and activate a virtual environment (optional but recommended):
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+-python -m venv venv
+-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. Install the required dependencies:
-pip install -r requirements.txt
+-pip install -r requirements.txt
 
 
 ## Usage
