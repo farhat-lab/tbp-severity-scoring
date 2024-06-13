@@ -32,6 +32,6 @@ This part contains the code and data used for the analysis of chest X-ray images
 
 ## Usage
 To test the PLI regression model on your image samples:
-python scripts/test.py
+- python scripts/test.py
 
 
