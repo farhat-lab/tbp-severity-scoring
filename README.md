@@ -1,10 +1,10 @@
 # tbp-severity-scoring
 
 ## Part 2: CNN
-This part contains the code and data used for the analysis of chest X-ray images (CXRs) for tuberculosis (TB) patients using the TB Portals Program (TBP) database.
+This repository contains the code and sample data used for the research work titled "Percent lung involved with tuberculosis on chest X-ray predicts unfavorable treatment outcome and is accurately predicted with artificial intelligence". More information on the raw data used for this research work is present in the TB-Portals website (https://tbportals.niaid.nih.gov).
 
 ## Repository Structure
-- `data/`: Contains the processed data files used for the analysis.
+- `data/`: Contains the example data files used for the analysis.
 - `models/`: Ensemble model weights.
 - `notebooks/`: Jupyter notebooks for cohort selection, quality checking and data exploration.
 - `scripts/`: Python scripts for regression and classification tasks.
