@@ -42,4 +42,5 @@ To test the PLI regression model on your image samples:
 python scripts/test.py
 ```
 
-
+## License Notice 
+The model weights are deposited for peer-review purposes only. No license is provided for reuse of this repository at this time. 
