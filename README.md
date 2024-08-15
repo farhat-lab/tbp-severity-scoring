@@ -43,4 +43,4 @@ python scripts/test.py
 ```
 
 ## License Notice 
-The model weights are deposited for peer-review purposes only. No license is provided for reuse of this repository at this time. 
+The model weights are deposited for peer-review purposes only. See LICENSE file for more details. 
