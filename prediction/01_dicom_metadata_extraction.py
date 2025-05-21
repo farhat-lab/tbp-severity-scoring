@@ -74,8 +74,8 @@ for root, _, files in os.walk(dicom_PATH):
             
             metadata_list.append(metadata)
             
-        if i % 100 == 0:
-            print(f"Finished file {i+1}/{num_files}")
+        # if i % 100 == 0:
+        print(f"Finished file {i+1}/{num_files}")
 
 # Create DataFrame with metadata
 df = pd.DataFrame(metadata_list)
@@ -85,8 +85,7 @@ df['image_replicate'] = file_nums
 
 assert len(df) == num_files
 
-if not os.path.isfile(os.path.join(CXR_PATH, 'cleaned_dicom_metadata.csv.gz')):
-    df[['patient_id', 'view', 'image_replicate', 'Modality', 'ViewPosition', 'PatientOrientation', 'PhotometricInterpretation', 'Rows', 'Columns', 'PixelData']].to_csv(os.path.join(CXR_PATH, 'cleaned_dicom_metadata.csv.gz'), index=False, compression='gzip')
+df[['patient_id', 'view', 'image_replicate', 'Modality', 'ViewPosition', 'PatientOrientation', 'PhotometricInterpretation', 'Rows', 'Columns', 'PixelData']].to_csv(os.path.join(CXR_PATH, 'cleaned_dicom_metadata.csv.gz'), index=False, compression='gzip')
 
 # IMAGE DISPLAY CODE:
 # # Filter to include only specific views
