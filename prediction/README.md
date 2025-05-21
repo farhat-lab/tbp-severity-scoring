@@ -36,7 +36,7 @@ Required arguments:
     <li><code>CXR_PATH</code>: Directory with DICOM images. The DICOM files should be in a subdirectory called 'dicom'</li>
 </ul>
 
-## `04_get_predictions .py`
+## `04_get_predictions.py`
 
 This script extracts metadata from DICOM messages. The metadata includes information about the patient, referring physician, date, time, and location that the x-ray was taken.
 
