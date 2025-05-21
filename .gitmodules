@@ -1,0 +1,3 @@
+[submodule "prediction/tbp-cxr-outlier"]
+	path = prediction/tbp-cxr-outlier
+	url = https://github.com/niaid/tbp-cxr-outlier.git
