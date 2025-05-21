@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - numpy
+  - gdcm
+  - pandas
+  - pydicom
+  - pip
+  - pillow
+  - pylibjpeg
+  - python=3.8
+  - importlib_resources
+  - scikit-image
+  - scikit-learn
+  - simpleitk
