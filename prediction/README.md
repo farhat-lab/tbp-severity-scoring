@@ -18,7 +18,7 @@ Required arguments:
 
 ## `02_outlier_detector_using_dicoms.py`
 
-This script extracts metadata from DICOM messages. The metadata includes information about the patient, referring physician, date, time, and location that the x-ray was taken.
+This script detects outlier images using a saved principal component analysis (PCA) model at `./tbp-cxr-outlier/tbpcxr/data/pca-35-06c.pkl`. The `tbp-cxr-outlier` directory was copied from the NIAID TB Portals <a href="https://github.com/niaid/tbp-cxr-outlier" target="_blank">repository</a>. "Normal" images are those taken from the front view, and "Outlier" images are those taken from most other views. Because the models were trained on mostly or all front view CXR images, they work best on CXR images of the same view. Images taken from other views are marked as outliers to flag potentially bad predictions (i.e. predictions out of range).
 
 Required arguments:
 
@@ -28,7 +28,7 @@ Required arguments:
 
 ## `03_PNG_conversion_and_comparison.py`
 
-This script extracts metadata from DICOM messages. The metadata includes information about the patient, referring physician, date, time, and location that the x-ray was taken.
+This script converts the DICOM files to PNG files for easy viewing of the PNG Files.
 
 Required arguments:
 
@@ -38,7 +38,7 @@ Required arguments:
 
 ## `04_get_predictions.py`
 
-This script extracts metadata from DICOM messages. The metadata includes information about the patient, referring physician, date, time, and location that the x-ray was taken.
+This script gets the percent lung involvement (PLI) or Timika score predictions.
 
 Required arguments:
 
