@@ -1,6 +1,6 @@
 import argparse
 import numpy as np
-import os
+import os, glob
 import pydicom
 import pandas as pd
 
@@ -48,7 +48,7 @@ def parse_filename(filename):
 
 
 # Traverse the directory to process DICOM files
-num_files = len(os.listdir(dicom_PATH))
+num_files = len(glob.glob(f"{dicom_PATH}/*.dcm"))
 print(f"{num_files} total files")
 
 # Lists to hold data for the DataFrame
