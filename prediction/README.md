@@ -26,7 +26,8 @@ env_name="CXR_predictions"
 CXR_PATH="test_images" # change to the name you use. This should contain a subdirectory called "dicom" with the .dcm files
 source activate $env_name
 
-python3 -u 01_dicom_metadata_extraction.py -i $CXR_PATH
+# uncomment the first script if you want the metadata file. It's not necessary to create it, and it's very time-consuiming.
+# python3 -u 01_dicom_metadata_extraction.py -i $CXR_PATH
 python3 -u 02_outlier_detector_using_dicoms.py -i $CXR_PATH
 python3 -u 03_PNG_conversion_and_comparison.py -i $CXR_PATH
 
